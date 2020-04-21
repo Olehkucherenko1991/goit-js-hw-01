@@ -1,33 +1,39 @@
-const country = prompt('Введите название страны!');
-const textNormalize = country.toLocaleLowerCase;
-const credit = 0;
-const Китай = 100;
-const Чили = 250;
-const Австралия = 170;
-const Индия = 80;
-const Ямайка = 120;
+let country = prompt('Введите название страны!');
+let price = 0;
+country = country.toLowerCase('');
 
 switch (country) {
-  case 1:
-    result = Китай;
+  case 'китай':
+    country = 'Китай';
+    price = 100;
+    console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
     break;
 
-  case 2:
-    result = Чили;
+  case 'чили':
+    country = 'Чили';
+    price = 250;
+    console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
     break;
 
-  case 1:
-    result = Австралия;
+  case 'австралия':
+    country = 'Австралия';
+    price = 170;
+    console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
     break;
 
-  case 1:
-    result = Индия;
+  case 'индия':
+    country = 'Индия';
+    price = 80;
+    console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
     break;
 
-  case 1:
-    result = Ямайка;
+  case 'ямайка':
+    country = 'Ямайка';
+    price = 120;
+    console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
     break;
 
   default:
-    alert: 'В вашей стране доставка не доступна';
+    alert('В вашей стране доставка не доступна');
+    console.log('В вашей стране доставка не доступна');
 }
